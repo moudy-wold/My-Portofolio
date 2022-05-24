@@ -1,0 +1,88 @@
+.about {
+    background:#000000;
+    margin:0;
+    padding:30px;
+    min-height:100vh;
+}    
+.about .container {
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:90px;
+}
+.about .container img{
+    width:35%;
+    height:55vh;
+    border-radius:10px;        
+}
+@media (max-width:767px){
+    .about .container img{
+    width:100%;
+    height:30vh;
+    }
+}
+.about .who-am-i{
+    flex:1;
+    padding:20px;
+}
+.about .who-am-i h6{
+    color:var(--main-color);
+}
+.about .who-am-i h3{
+    color:#Ffff;
+}
+.about .who-am-i p{
+    color:#fff;
+    font-size:18px;
+}
+.about .personel-data{
+    width: 100%;
+    display:flex;
+    flex-wrap:wrap;
+}
+.about .personel-data div{
+    width:49%;
+    padding:10px 6px;
+    color:#fff;
+    font-size:17px
+}
+@media (max-width:767px){
+    .about .personel-data div{
+        width:96%;
+    }
+}
+.about .personel-data span{
+    color:var(--par-color);
+}
+.about .personel-data div a {
+    display:block;
+    width:130px;
+    line-height:40px;
+    text-align:center;
+    border-radius:7px;
+    background-color: var(--main-color);
+    font-size:17px;
+    cursor:pointer;
+    font-weight:500;
+    text-decoration:none;
+    color:#fff;
+    transition:.2s;
+}
+.about .personel-data div:hover a {
+color:var(--main-color);
+background-color:#fff;
+}
+.about .personel-data div:active a{
+    transform:translateY(2px);
+}
+.about .personel-data .social-media{
+    display:flex;
+}
+.about .personel-data .social-media i {
+    margin:10px;
+    font-size:30px;
+    cursor:pointer;
+    width:30px
+}
+.about .personel-data .social-media i:hover{
+    color:var(--main-color);
+}

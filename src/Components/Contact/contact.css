@@ -1,0 +1,116 @@
+.contact{
+    min-height:100vh;
+    background-color:#000000;
+    padding:40px 10px;
+}
+.contact .container{
+    display:flex;
+    flex-wrap: wrap;
+}
+.form {
+    width:64%;
+}
+@media(max-width:767px){
+    .form {
+        width:100%;
+    }   
+}
+.form h3,
+.contact-info h3{
+    color:#fff;
+    font-size:25px;
+    margin-bottom:20px;
+}
+
+.form input{
+    background-color: rgb(23, 23, 23);
+    width:96%;
+    margin-top:25px;
+    border:none;
+    padding: 10px;
+    border-radius:6px;
+    font-size:18px;
+    outline:none;
+    color:#eee;
+}
+.form input:nth-child(1),
+.form input:nth-child(2){
+    width:47%;
+}
+.form input:nth-child(1){
+    margin-right:10px;
+}
+.form input:nth-child(5){
+    padding:8px 10px !important;
+    width:150px;
+    background-color:var(--main-color) !important;
+    color:#fff;
+    cursor:pointer;
+    border-radius:8px;
+    margin-top:20px;
+    transition:.2s;
+}
+.form input:nth-child(5):hover{
+    color:var(--mnain-color) ! important;
+    background-color: #fff ! important;
+}
+.form input:nth-child(5):active{
+    transform:translateY(2px);
+    background-color: #fff;
+}
+.form textarea{
+    width:95%;
+    margin-top:100px;
+    background-color: rgb(23, 23, 23);
+    outline:none;
+    border:none;
+    margin-top:25px;
+    border-radius:6px;
+    padding:10px;
+    color:#eee;
+}
+input:focus,
+textarea:focus{
+    border-bottom:1px solid var(--main-color);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.contact-info{
+    width:35%;
+    
+}
+@media(max-width:767px){
+    .contact-info {
+        margin-top: 100px;
+        width:100%;
+    }   
+}
+.contact-info p{
+    color:#eee;
+}
+.contact-info ul li{
+    list-style:none;
+    display:flex;
+    flex-wrap: wrap;
+    align-items:center;
+    
+}
+
+.contact-info ul li i {
+    width:30%;
+    color:var(--main-color);
+    font-size:30px;
+    
+}
+.contact-info ul li div{
+    flex:1;
+    color:#fff;
+    font-size:19px
+}
+.contact-info ul li div p{
+    color:var(--par-color);
+}
+.contact-info ul li:hover div p{
+    color:var(--main-color);
+}

@@ -1,0 +1,40 @@
+.navbar{
+    position: fixed !important;
+    z-index:3;
+    width:100vw;
+    
+}
+.navbar .container a,
+.navbar .container .navbar-nav a {
+    color:#fff !important;
+    
+}
+.navbar .container a:hover,
+.navbar .container .navbar-nav a:hover {
+    color:var(--main-color);
+} 
+button {
+    background-color: #FFF!important;
+    position:relative;
+    height:2px;
+}
+button::after
+{
+    width: 115%;
+    height:9px;
+    background-color: #FFF;
+    position:absolute;
+    content:"";
+    top:12px;
+    left:-2px;
+    border-radius:10px;
+}
+
+button span{
+    background-image: url() !important;
+    width:100% !important;
+    height:10px !important;
+    background-color: red !important;
+
+
+}
